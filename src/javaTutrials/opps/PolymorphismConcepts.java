@@ -1,6 +1,11 @@
 package javaTutrials.opps;
 
-public class PolymorphismConcepts {
+public class PolymorphismConcepts implements PollyInterface {
+    public void show()
+    {
+        System.out.println("show method");
+    }
+
 
     public void show(int x)
     {
@@ -17,5 +22,6 @@ public class PolymorphismConcepts {
 
         PolymorphismConcepts polymorphismConcepts=new PolymorphismConcepts();
         polymorphismConcepts.show('a');
+        polymorphismConcepts.show();
     }
 }
